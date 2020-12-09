@@ -1,0 +1,534 @@
+/*-----MAIN COLORS-----*/
+
+.mcolor {
+    background-color: blue;
+    color: white; 
+ }
+ 
+ .scolor {
+     background-color: #cfcfcfad;
+     color: black;
+     border: 2px solid white;
+ }
+ 
+ .seccolor {
+     background-color: #F3EFF5;
+ }
+
+ main a {
+     color: #eb3410;
+ }
+
+strong {
+    color: #eb3410;
+}
+
+/*-----GLOBAL SETTINGS-----*/
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-size: 12px;
+    background-color: #F3EFF5;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    /*font-family: ;*/
+}
+
+main {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+em {
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    text-align: justify;
+}
+
+section {
+    text-align: center;
+    padding: 40px 80px;
+}
+
+.visualbackground {
+    min-height: 120px;
+}
+
+@media only screen and (max-width: 442px) {
+    section {
+        padding: 20px;
+    }
+}
+
+/*Styles Titles*/
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: white;
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+
+}
+
+h4 {
+    
+}
+
+/*Btn styles*/
+
+.btn {
+    padding: 15px 25px;
+}
+
+.btn:hover {
+    /*color a definir*/
+}
+
+/*-----NAV-----*/
+
+#fixedtop-menu {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.9);
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav li a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 10px 25px;
+}
+
+.logo {
+    float: left;
+    color: white;
+    padding: 22px 20px;
+}
+
+.logo a {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: white;
+}
+
+.logoimg {
+    display: none;
+}
+
+.logoimg img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        display: none;
+    }
+    .logoimg {
+        display: block;
+    }
+}
+
+/* -----HEADER-----*/
+
+header {
+    min-height: 500px;
+}
+
+.containing-table {
+    display: table;
+    width: 100%;
+}
+
+.centre-align {
+    padding: 10px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content span {
+    display: block;
+}
+
+.main_title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#bgvid {
+    position: fixed; 
+    display: block;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background: url('../assets/img/backgroundblack.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes spin {
+    from{
+    transform: rotateY(0deg);
+    }
+    to{
+    transform: rotateY(360deg);
+    }
+   }
+   @-webkit-keyframes spin {
+    from{-webkit-transform: rotateY(0deg);}
+    to{-webkit-transform: rotateY(360deg);}
+   }
+   .imageSpin {
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    -webkit-animation-name: spin;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+   }
+
+@media only screen and (max-width: 960px) {
+    #bgvid {
+        background: url('../assets/img/backgroundblack.png');     
+    }
+}
+
+/*-----MAIN TEAMS-----*/ 
+
+section>.galerie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid blue;
+}
+
+#Dimitri {
+    background-image: url('../assets/img/photoDim.jpg');
+}
+
+#Greg {
+    background-image: url('../assets/img/PhotoGREG.jpg');
+}
+
+#Terence {
+    background-image: url('../assets/img/terence.jpg');
+}
+
+#Marlene {
+    background-image: url('../assets/img/photomarlene.jpg');
+}
+
+.blockphoto>p {
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.blockphoto {
+    padding: 25px;
+    margin: 5px;
+}
+
+.blockphoto p {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+span b {
+    color: #eb3410;
+}
+
+@media only screen and (max-width: 960px) {
+    section>.galerie {
+        flex-direction: column;
+    }
+}
+
+/* ---- MEMBRE-2 (TERENCE) ----*/
+
+/* compétences et hobbies */
+.membre2-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.membre2-content > article {
+    border: 2px solid black;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+    background-color: lightskyblue;
+    padding: 10px 50px 10px 5px;
+}
+
+.membre2-content > article > h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+
+.membre2-content > article > ul, #member-content > article > ol {
+    list-style-type: square;
+    text-align: left;
+}
+
+.membre2-content > h3 {
+    font-size: 1.2em;
+}
+
+.membre2-content > p {
+    font-size: 1.2em;
+}
+
+/* Tableaux */
+.membre2-content > ul {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+.membre2-table tr > th {
+    text-decoration: underline;
+    color: black;
+}
+
+.membre2-table {
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.membre2-table tr > td {
+    border-bottom: 2px solid black;
+}
+
+.membre2-table tr > td:nth-of-type(1) {
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+    border : 2px solid black;
+    padding: 5px;
+}
+
+.membre2-table tr > td:nth-of-type(2) {
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+/* lien */
+.membre2-link > a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* Règles spécifiques pour les écrans de moins de 960px */
+@media only screen and (max-width: 960px) {
+    .membre2-content {
+        flex-direction: column;
+    }
+
+    .membre2-content > article {
+        margin: 10px 5px;
+    }
+
+    .membre2-table {
+        margin: 10px 5px;
+    }
+
+    .membre2-table tr > td:nth-of-type(1) {
+        font-size: 1em;
+        padding: 2px; 
+    }
+
+    .membre2-table tr > td:nth-of-type(2) {
+        font-size: 1em;
+        padding: 2px;
+    }
+}
+
+/*---- MEMBRE-3 -----*/
+    .tableau td{   
+        padding: 20px;
+        text-align: left;
+    }
+    .tableau {
+        margin: 50px auto;
+    }
+    .tableau th{
+        text-align: left;    
+        padding-left: 20px;
+    }
+    .marlenegreg ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    .paragraph_INV {
+        display: none;
+    }
+
+    .color {
+        color: #eb3410;
+     }
+
+    @media only screen and (max-width: 768px){
+        
+        .tableau {
+            display: none;
+        }
+        
+        .marlenegreg {
+            width: auto;
+        }
+        
+        .paragraph_INV {
+            display: block;
+        }
+    }
+
+/* ---- MEMBRE-4 ----*/
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.dimitripage {
+    position: relative;
+    font-size: 1.2em;
+}
+
+.competences {
+    padding: 10px;
+}
+
+.dimitripage li {
+    list-style-type: none;
+}
+
+.dimitripage ul {
+    padding: 0;
+}
+
+.dimitripage td {
+    padding: 8px 0;
+}
+
+.dimitripage table td:nth-child(1) {
+    text-align: justify;
+}
+
+.dimitripage table td:nth-child(2) {
+    text-align: right;
+}
+
+.dimitripage table td:nth-child(3) {
+    text-align: right;
+}
+
+.dimitripage p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+    .dimitripage table td:nth-child(2) {
+        display: none;
+    }
+    
+    .dimitripage table td:nth-child(3) {
+       display: none;
+    }
+    .flex {
+        flex-direction: column;
+    }
+}
+
+
+/*-----FOOTER-----*/ 
+
+footer {
+    height: auto;
+    text-align: center;
+    padding: 10px 80px;
+    background-color: black;
+    color: rgb(77, 77, 77);
+}
+
+footer p {
+    text-align: center;
+}
